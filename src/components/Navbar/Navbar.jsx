@@ -1,0 +1,26 @@
+import { Menu } from "lucide-react"; // ✅ Correct
+
+import React, { useState } from "react";
+import MobileMenu from "./MobileMenu";
+
+const Navbar = () => {
+  const [openMenu, setOpenMenu] = useState(false);
+  return (
+    <div>
+      <nav className="relative flex flex-row justify-between w-full h-screen overflow-hidden bg-none px-3 py-2">
+        <h1 className="font-extrabold text-2xl text-white">REBUILD</h1>
+        <Menu onClick={() => setOpenMenu((t) => !t)} />
+
+        <div
+          className={`absolute top-0 left-0 w-full h-screen z-50 rounded-b-2xl bg-amber-950 transition-transform duration-800 ease-in-out ${
+            openMenu ? "translate-y-0" : "-translate-y-full"
+          }`}
+        >
+          <MobileMenu openMenu={openMenu} setOpenMenu={setOpenMenu} />
+        </div>
+      </nav>
+    </div>
+  );
+};
+
+export default Navbar;
