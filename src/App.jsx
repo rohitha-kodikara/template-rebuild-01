@@ -1,13 +1,19 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero";
+import Section1 from "./components/Section1";
+import Section2 from "./components/Section2";
 
 const App = () => {
   return (
-    <div className="flex flex-col w-full h-screen bg-cover bg-center bg-no-repeat bg-[url('/dee.jpg')]">
-      <Navbar />
-      <Hero />
-    </div>
+    <>
+      <div className="overflow-hidden relative flex flex-col  h-screen bg-cover bg-center bg-no-repeat bg-[url('/ab.jpg')]">
+        <Navbar />
+        <Hero />
+      </div>
+      <Section1 />
+      <Section2 />
+    </>
   );
 };
 
