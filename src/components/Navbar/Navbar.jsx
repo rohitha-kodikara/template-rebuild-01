@@ -6,7 +6,7 @@ import MobileMenu from "./MobileMenu";
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
-    <nav className=" z-50 relative flex flex-row justify-between w-full   bg-none px-3 py-2">
+    <nav className=" z-50 relative flex flex-row justify-between items-center  w-full  bg-none px-3 py-3">
       <h1 className="font-extrabold text-2xl text-white">REBUILD</h1>
       <Menu
         onClick={() => setOpenMenu((t) => !t)}
@@ -20,6 +20,20 @@ const Navbar = () => {
       >
         <MobileMenu openMenu={openMenu} setOpenMenu={setOpenMenu} />
       </div>
+
+      <div className="hidden md:block">
+        <ul className="flex flex-row gap-6 text-white font-bold ">
+          <li>About</li>
+          <li>Services</li>
+          <li>Our Work</li>
+          <li>Pricing</li>
+          <li>FAQs</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <button className="hidden md:block bg-white px-3  sm:px-5 py-2 rounded-full">
+        Book a Call
+      </button>
     </nav>
   );
 };

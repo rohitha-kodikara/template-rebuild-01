@@ -7,10 +7,19 @@ const Hero = () => {
       <hr className="w-full border-t border-white  mt-16 sm:mt-15" />
       {/* Desktop */}
       <div className="hidden sm:flex bg-black/50 p-3 rounded-lg translate-px px-5 mr-5 items-center gap-3">
-        <p className="text-left flex-1">
-          From kitchens and bathrooms to loft conversions and extensions -
-          Rebuild transforms omes with expert craftsmanship and clear
-          communication thruoghtout
+        <p className="text-left ">
+          <div className="md:flex md:flex-row justify-between gap-9">
+            <div>
+              From kitchens and bathrooms to loft conversions and extensions
+              -{" "}
+            </div>
+
+            <div>
+              {" "}
+              Rebuild transforms omes with expert craftsmanship and clear
+              communication thruoghtout
+            </div>
+          </div>
         </p>
         <button className="bg-white text-black py-2 px-3 rounded-full whitespace-nowrap">
           View Services
