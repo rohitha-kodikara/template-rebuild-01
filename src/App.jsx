@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero";
-import Section1 from "./components/Section1";
-import Section2 from "./components/Section2";
+
 import ReactLenis from "lenis/react";
+import AboutUs from "./components/AboutUs";
 
 const App = () => {
   return (
@@ -17,12 +17,13 @@ const App = () => {
           autoRaf: true,
         }}
       />
-      <div className="overflow-hidden relative flex flex-col  h-screen bg-cover bg-center bg-no-repeat bg-[url('/ab.jpg')]">
+      <div className=" overflow-hidden relative flex flex-col  h-screen bg-cover bg-center bg-no-repeat  bg-[url('/hero.jpg')] ">
         <Navbar />
         <Hero />
       </div>
-      <Section1 />
-      <Section2 />
+      <div className="xl:px-15">
+        <AboutUs />
+      </div>
     </>
   );
 };

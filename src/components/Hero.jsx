@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="gap-y-8 sm:gap-8 absolute inset-0 flex flex-col items-start w-full h-full py-10 sm:py-25 px-5 text-justify text-white">
+    <div className="md:px-15 gap-y-8 sm:gap-8 absolute inset-0 flex flex-col items-start w-full h-full py-10 sm:py-25 px-5 text-justify text-white">
       <hr className="w-full border-t border-white  mt-16 sm:mt-15" />
       {/* Desktop */}
       <div className="hidden sm:flex bg-black/50 p-3 rounded-lg translate-px px-5 mr-5 items-center gap-3">
