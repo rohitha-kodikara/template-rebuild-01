@@ -57,11 +57,11 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="fixed bottom-7 right-5  flex flex-col gap-2 bg-black py-2 px-2 rounded-lg">
-        <button className="border border-white py-2 px-3 rounded-lg flex justify-center items-center gap-2">
+      <div className="z-50 fixed bottom-7 right-5  flex flex-col gap-2 bg-black py-2 px-2 rounded-lg ">
+        <button className="border border-white py-2 px-3 rounded-lg flex justify-center items-center gap-2 text-sm">
           Customization for $349
         </button>
-        <button className="bg-white text-black py-2 px-3 rounded-lg flex flex-row items-center gap-2">
+        <button className="bg-white text-black py-2 px-3 rounded-lg flex flex-row items-center gap-2 text-sm">
           See all templates <ArrowUpRight />
         </button>
       </div>

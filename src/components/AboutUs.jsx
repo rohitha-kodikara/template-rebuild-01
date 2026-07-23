@@ -20,7 +20,7 @@ const AboutUs = () => {
           </p>
         </div>
 
-        <div className="lg:grid lg:grid-cols-2  lg:gap-y-8">
+        <div className="lg:grid lg:grid-cols-2  lg:gap-y-8 lg:py-4">
           <h3 className="text-5xl">
             Your home deserves{" "}
             <span className="text-gray-400">
@@ -57,7 +57,11 @@ const AboutUs = () => {
               </p>
             </div>
           </div>
-          <img className="lg:h-full lg:pl-15 w-1/2" src="/about.jpg" alt="" />
+          <img
+            className="lg:h-full lg:pl-15 lg:w-1/2"
+            src="/about.jpg"
+            alt=""
+          />
 
           <img
             className="hidden lg:flex lg:flex-row order-last lg:pl-70 lg:w-full  lg:object-cover lg:h-full "

@@ -4,6 +4,8 @@ import Hero from "./components/Hero";
 
 import ReactLenis from "lenis/react";
 import AboutUs from "./components/AboutUs";
+import Stats from "./components/Stats";
+import OurServices from "./components/OurServices";
 
 const App = () => {
   return (
@@ -21,9 +23,11 @@ const App = () => {
         <Navbar />
         <Hero />
       </div>
-      <div className="xl:px-15">
+      <div className="flex flex-col lg:px-10">
         <AboutUs />
       </div>
+      <Stats />
+      <OurServices />
     </>
   );
 };
